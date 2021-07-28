@@ -1,0 +1,55 @@
+# created by virtualenv automatically
+
+# Python
+*.pyc
+*~
+__pycache__
+
+# Env
+.env
+boom1/
+venv/
+
+# Database
+db.sqlite3
+
+# Static folder at project root
+/static/
+
+# macOS
+._*
+.DS_Store
+.fseventsd
+.Spotlight-V100
+
+# Windows
+Thumbs.db*
+ehthumbs*.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Visual Studio
+.vscode/
+.history/
+*.code-workspace
+
+*.swp
+*~
+
+.eslintcache
+
+.project
+.svn
+.nvm-version
+
+node_modules
+*.log
+/tags
+/atom-shell/
+/out/
+docs/output
+docs/includes
+spec/fixtures/evil-files/
+!spec/fixtures/packages/package-with-incompatible-native-module-loaded-conditionally/node_modules/
+out/
+/electron/

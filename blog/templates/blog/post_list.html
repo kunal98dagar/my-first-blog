@@ -9,17 +9,15 @@
     <header>
       <h1><a href="">my stupid blog</a></h1>
     </header>
-    <article class="">
-      <time>published: 28.0702021, 21:36</time>
-      <h2><a href="">my first post</a></h2>
-      <p>blah blah blah</p>
+    {% for post in posts %}
+        <article class="">
+          <time>published: {{post.published_date}}</time>
+          <h2><a href="">{{post.title}}</a></h2>
+          <p>{{post.text|linebreaksbr}}</p>
+        </article>
 
-    </article>
-    <article class="">
-      <time>published: 28.0702021, 21:36</time>
-      <h2><a href=""> my second post</a></h2>
-      <p>wow wow wow</p>
-    </article>
-    
+    {% endfor %}
+
+
   </body>
 </html>
